@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding:0;
+    margin: 0;
   }
 
 body {
@@ -18,7 +20,7 @@ p{
     color: rgb(255, 255, 255)
 }
 
-.container {
+.navbar {
     width: 100%;
     height: 90px;
     padding: 15px 15px;
@@ -34,6 +36,16 @@ p{
     float: right;
     display: inline-flex;
     align-items: center;
+}
+
+.jumbroton{
+    background-image: url(../scr/backgroun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 15px;
+    height: 600px;
+    text-align: center;
+    border-bottom: 10px solid  #303245;
 }
 
 .item1 p{
@@ -61,17 +73,6 @@ p{
     background-color: #E50914;
 }
 
-
-.Konten1{
-    background-image: url(/Task_Website_DTS/scr/backgroun.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 15px 15px;
-    height: 500px;
-    text-align: center;
-    border-bottom: solid 10px #303245;
-}
-  
   
 .subtitle {
     color: #eee;
@@ -81,22 +82,20 @@ p{
     margin-top: 10px;
 }
   
-.input-container {
-    height: 50px;
+form {
     position: relative;
-    width: 100%;
+    margin-top: 2em;
 }
   
 .input {
     background-color: #303245;
     border-radius: 12px;
-    border: 0;
     box-sizing: border-box;
     color: #eee;
     font-size: 18px;
-    height: 100%;
-    outline: 0;
-    padding: 4px 20px 0;
+    outline: none;
+    padding: 16px 40px;
+    border: none;
 }
   
 .submit {
@@ -108,7 +107,6 @@ p{
     cursor: pointer;
     font-size: 18px;
     height: 50px;
-    margin-top: 38px;
     outline: 0;
     text-align: center;
 }
@@ -118,64 +116,68 @@ p{
 }
 
 
-.Konten2{
+.konten{
     height: 500px;
-    text-align: left;
-    border-bottom: solid 10px #303245;
-    display: inline-flex;
+    border-bottom: 10px solid #303245;
+    display:flex;
+    justify-content: space-evenly;
     align-items: center;
     padding: 15px 35px;
 }
 
-.Konten3{
-    height: 500px;
-    text-align: right;
-    border-bottom: solid 10px #303245;
-    display: inline-flex;
-    align-items: center;
-    padding: 15px 35px;
+.text-konten{
+    width: 50%;
 }
 
-.Konten4{
-    height: 500px;
-    text-align: left;
-    border-bottom: solid 10px #303245;
-    display: inline-flex;
-    align-items: center;
-    padding: 15px 35px;
+.text-konten p{
+    font-size: 18px;
+    color: rgb(203, 203, 203);
+    padding-top: 14px;
 }
 
-.Konten5{
-    height: 500px;
-    text-align: right;
-    border-bottom: solid 10px #303245;
-    display: inline-flex;
-    align-items: center;
-    padding: 15px 35px;
-}
+.gambar-konten{
+    width: 500px;
+    height: 400px;
 
-.gambarKonten img{
-    height: 350px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 footer{
+    margin-top: 30px;
+    background-color: rgb(2, 24, 80);
+}
+
+footer h1, footer p{
     text-align: center;
+    margin: 20px 0;
+   
 }
 
 .container-footer{
-    text-align: center;
-    margin-bottom: 30px;
-    align-items: center;
+    padding: 30px 30px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+     /* width: 60%; */
+     margin: 0 auto;
+     align-items: center;
 }
 
-.footerRight{
-    text-align: left;
+footer a{
+    text-decoration: none;
+    color: wheat;
+    display: block;
+    margin: 8px 0;
 }
 
-.footerLeft{
-    text-align: right;
+footer a:hover{
+    color: whi
+}
+
+.konten-footer{
+    width: 30%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
